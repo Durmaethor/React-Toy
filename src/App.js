@@ -1,17 +1,16 @@
 import React from 'react';
+import Greet from './Greet';
 
 
 function App({ }) {
   return (
-    <div>
+    <div className='people'>
       <Greet firstName='Ryan' lastName='Kramer' />
       <Greet firstName='Mikkel' lastName='Mentor' />
     </div>
   );
 }
 
-function Greet({ firstName, lastName}) {
-  return <h1>Hello {firstName} {lastName}. How are you?</h1>
-}
+
 
 export default App;
